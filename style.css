@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**********menu**********/
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  position: relative;
+  background: #61b7ca;
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {
+    float: left;
+}
+.right-item {
+    float: right;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+@media (max-width: 630px) {
+  .menu-main li {
+    display: block;}
+  }
+}
+
+/*******company*******/
+.company_block {
+  float: left;
+  width: 33.33%;
+}
+.company:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.company {
+  margin: 3%;
+  background-image: url(image/figura.png);
+  background-size:cover
+}
+.company_block h2 {
+  font-size: 20px;
+  color: rgb(99, 236, 224);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.company_block p {
+  font-size: 18px;
+  color: rgb(101, 105, 105);
+  text-shadow: 1px 1px 1px rgb(159, 180, 182);
+}
+@media screen and (max-width: 600px) {
+  .company_block {
+      width: 100%;
+  }
+}
+
+/************row***********/
+.row {
+    background-image: url(image/15-156834_iphone-x-png-iphone-x-vector-apps.png);
+    color: white;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    padding-top: 11%;
+    padding-bottom: 11%;
+    padding-left: 5%;
+}
+.left {
+  width: 45%;
+}
+.right {
+  width: 55%;
+}
+.column h1 {
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 1px 1px 1px #1d1b1b;
+}
+.column h3 {
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #a39894;
+}
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}
+
+/*******iconblock*******/
+.iconblock-8 {
+  float: left;
+  width: 25%;
+}
+.iconblock:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.iconblock {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #c6b4d3;
+  text-shadow: 1px 1px 1px black;
+}
+.iconblock-8 {
+  margin: 10px 0;
+  padding-right:60px;
+  color: white;
+}
+.iconblock-8 .icon {
+  float: right;
+  text-align: center;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 110px;
+  height: 130px;
+  background: #ead1f1;
+  color: #fff; 
+  transition: all .3s;
+  transform: skew(-20deg);
+  margin-left:30px;
+}
+.iconblock-8 .icon i,
+.iconblock-8 .icon img {
+  font-size: 32px;
+  height:70px;
+  width:70px;
+  color: #fff; 
+  padding-top:24px;
+  z-index:1;
+  position: relative;
+  box-sizing: content-box;
+  transform: skew(20deg);
+}
+.iconblock-8:hover .icon {
+  top: 0;
+  left: 0;
+}
+.iconblock-8:hover .icon {
+  box-shadow: 8px 8px #BDE1FF;
+}
+.iconblock-8 .block {
+  overflow: hidden;
+  text-align: right;
+}
+.iconblock-8 h3 {
+  transition: all 0.7s ease 0s;
+  color: #337AB7;
+  font-size:20px;
+  margin:10px 0;
+}    
+.iconblock-8:hover h3 {
+  color: #000;
+} 
+@media screen and (max-width: 600px) {
+  .iconblock-8 {
+      width: 100%;
+  }
+}
+
+/***********product***********/
+.product {
+  background-color: #c6b4d3;
+  padding-bottom: 2%;
+}
+.product_1 h2 {
+  color: white;
+}
+.product_1 {
+  width: 80%;
+  height: 50%;
+  background-color:#337AB7;
+  text-align: center;
+  margin-left: 10%;
+  padding: 1%;
+  color: #337AB7;
+  transition: 0.5s;
+}
+.product_1:hover {
+  box-shadow: 8px 8px #337AB7;
+  color: rgb(221, 221, 221);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-size: 16px;
+  background-image: url(image/create-workout-dribbble-full.png);
+  background-size:cover;
+}
+.product_2 h2 {
+  color: white;
+}
+.product_2 {
+  width: 80%;
+  height: 50%;
+  background-color:#33b7a1;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 2%;
+  padding: 1%;
+  color: #33b7a1;
+  transition: 0.5s;
+}
+.product_2:hover {
+  box-shadow: 8px 8px #33b7a1;
+  color: rgb(236, 227, 227);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-size: 16px;
+  background-image: url(image/bdb4d162794127.Y3JvcCwxMDAyLDc4NCwwLDY2.jpg);
+  background-size:cover;
+}
